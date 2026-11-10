@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="website">
+    <div id="buttons">
+        <button id="fliter">Filter</button>
+        <button id="rating">Rating 4.5+</button>
+        <button id="pet">Pet Friendly</button>
+        <button id="alcohol">Serves Alcohol</button>
+        <!-- end of buttons  -->
+    </div>
+
+    <div id="filterpage">
+        <h3>Choose Filter</h3>
+        <form >
+            <!-- jisme click karte hain unme value daalni padti hain  -->
+             <!-- 4 inputs me se koi 1 input select hoga  -->
+            <input type="radio" name="applyfilter" id="a" value="Cost: High to Low">
+            <label for="a">Cost: High to Low</label>
+            <br>
+            <input type="radio" name="applyfilter" id="b" value="Cost: Low to High">
+            <label for="b">Cost: Low to High</label>
+           <br>
+            <input type="radio" name="applyfilter" id="c" value="Sort by Rating">
+            <label for="c">Sort by Rating</label>
+            <br>
+            <input type="radio" name="applyfilter" id="d" value="Distance">
+            <label for="d">Distance</label>
+            <br>
+        </form>
+        <!-- ouside the form  -->
+        <button class="z" id="x">Apply</button>
+        <button class="z" id="y">Clear All</button>
+
+        <!-- end of filterpage -->
+    </div>
+
+    <!-- resturants(cards) ko div tag(root) ke andhar rakhte hain -->
+     <!-- jitne bi cards honge vo root ke andhar ayenge  -->
+     <div id="root">
+        <!-- end of root -->
+     </div>
+
+
+<!-- end of website-->
+</div>
+    <script src="./scripit.js"></script>
+</body>
+</html>

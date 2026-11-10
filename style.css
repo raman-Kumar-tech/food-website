@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+#buttons{
+    background-color: brown;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    width: 100%;
+    
+}
+button{
+   padding:5px ;
+   border: none;
+    outline: none;
+    font-weight: bold;
+   
+}
+button:hover{
+    background-color: grey;
+}
+
+#root{
+    padding-top: 90px ;
+    background-color: wheat;
+    width: 100%;
+    padding-left:40px ;
+    padding-right:40px ;
+    padding-bottom: 40px;
+    display: flex;
+/* flex-wrap: wrap, agr space availbe hoga toh next line me aa jayega  */
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+.pic_resturant{
+    height: 180px;
+    width: 260px;
+    border-radius: 10px;
+}
+.firstcard{
+     width: 260px;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.firstcard:hover{
+    box-shadow: 0px 0px 5px 10px white;
+    background-color: white;
+}
+
+.firstlower_class{
+    display: flex;
+    justify-content: space-between;
+}
+.r_name_class{
+    font-size: 20px;
+}
+.r_rating_class{
+    background-color:green;
+    font-size: 15px;
+    color: white;
+    height: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+}
+.r_food_class,.r_food_price_class,.r_location_class{
+    color: grey;
+    font-size: 15px;
+}
+.secondlower_class,.thirdlower_class{
+    display: flex;
+    justify-content: space-between;
+}
+.r_distance_class{
+    font-size: 15px;
+}
+#filterpage{
+    /* padding-top:70px ; */
+    background-color: white;
+    position: fixed;
+    top: 15vh;
+    left: 50vw;
+    /* transform -x axis(right side) se liya hain taki filterpage screen ke center me aa ske  
+    right side se 50% left ki taraf aa jayega   */
+    transform: translate(-50%); 
+    padding: 20px;
+   line-height: 30px;
+   /* hum chahte hain ki page me display na ho islliye display:none; ka use kiya hain  */
+   display:none;
+   z-index: 10;
+}
+.z{
+    background-color: green;
+    color: white;
+}
